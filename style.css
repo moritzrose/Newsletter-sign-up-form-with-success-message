@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    font-size: 16px;
+}
+.wrapper {
+    background-color: hsl(0, 0%, 100%);
+    min-width: 57em;
+    display: flex;
+    border-radius: 25px;
+    padding: 1em;
+  
+}
+
+picture {
+    width: 45%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.sign-up-container {
+    font-weight: 400;
+    padding: 2em;
+    padding-right: 2em;
+    color: hsl(234, 29%, 20%);
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    margin: 0;
+}
+
+#list{
+    padding: 0;
+    margin: 2em 0em;
+}
+
+.list-item {
+    list-style-type: none;
+    margin: 0.4em
+}
+
+.list-item::before {
+    vertical-align: middle;
+  content: url('./assets/images/icon-list.svg');
+  margin-right: 1em;
+}
+
+.input-label {
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+#submitForm {
+    width: 90%
+}
+
+#inputEmail{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    height: 3.5em;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+    opacity: 0.7;
+    cursor: pointer;
+    text-indent: 20px;
+}
+
+#inputEmail:hover {
+    opacity: 1;
+}
+
+
+.submit-btn{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 3.5em;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+.submit-btn:hover {
+    background: linear-gradient(90deg,hsl(352, 98%, 66%) 0%, hsl(14, 100%, 67%) 100%);
+    box-shadow:  0px 0px 2px hsl(352, 98%, 66%),
+              0px 0px 2px hsl(14, 100%, 67%);
+}
+
+#inputEmail {
+    display: block;
+}
+
+#submitButton {
+    display: block;
+}
+
+.success-container {
+    display: none;
+    color:  hsl(234, 29%, 20%);
+    width:23em;
+    background-color: white;
+    border-radius: 40px;
+    padding: 4em;
+    
+}
+
+#successIcon {
+    width: 3.5em;
+    height: auto;
+}
+
+#thanksHeader {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+    line-height: 1;
+}
+
+#confirmation{
+    line-height: 1.4;
+}
+
+.dismiss-btn {
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    width: 100%;
+    height: 3.9em;
+    border-radius: 8px;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.dismiss-btn:hover {
+    background: linear-gradient(90deg,hsl(352, 98%, 66%) 0%, hsl(14, 100%, 67%) 100%);
+    box-shadow:  0px 0px 2px hsl(352, 98%, 66%),
+              0px 0px 2px hsl(14, 100%, 67%);
+    cursor: pointer;
+}
+
+
+@media (max-width: 970px) {
+
+
+    .wrapper {
+        flex-direction: column-reverse;
+        min-height: 100vh;
+        width: 100%;
+        min-width: unset;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+
+    picture {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: auto;
+    }
+
+    .success-container {
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 8em;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+    #successIcon {
+        width: 4em;
+        height: auto;
+    }
+
+    #thanksHeader {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-top: 0.6em;
+        margin-bottom: 0.5em;
+        line-height: 1;
+    }
+
+    .dismiss-btn {
+        display: block;
+        margin-top: auto;
+    }
+}
